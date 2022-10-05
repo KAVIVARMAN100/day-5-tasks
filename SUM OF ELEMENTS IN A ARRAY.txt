@@ -1,0 +1,77 @@
+
+#######ANONYMOUS#######
+
+ var a=[12,23,44,5,5,66,77,876];
+  var sum =0;
+  var add=function(arr){
+ 
+  
+  for(var i=0;i<a.length;i++){
+      
+      sum =sum+a[i];
+  }  
+      return sum;
+  }
+ 
+ console.log(add(a));
+
+*********************************************************************************************************
+
+######ARROW###########
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic
+   var a=[12,23,44,5,5,66,77,876];
+  var sum =0;
+  var task=(a)=>{
+ 
+  
+  for(var i=0;i<a.length;i++){
+      
+      sum =sum+a[i];
+  }  
+      return sum;
+  }
+ 
+ console.log(task(a));
+
+  
+
+  //end-here
+});
+
+
+************************************************************************************************************
+###########IFFE###########
+
+var a=[12,23,44,5,5,66,77,876];
+  var sum =0;
+  (function task(a){
+ 
+  
+  for(var i=0;i<a.length;i++){
+      
+      sum =sum+a[i];
+console.log(sum);
+
+
+  }  
+     
+  })(a)
+ 
+ 
+  

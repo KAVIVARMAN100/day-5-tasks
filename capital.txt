@@ -1,0 +1,45 @@
+
+########anononymus#########
+
+var a=["KAVI","VARMAN","GUVI","STUDENT"]
+  
+  var b1=function(a){
+  
+   
+   var temp=[]
+   for(var i=0;i<a.length;i++){
+       
+    a[i]=a[i].toLowerCase();
+   
+    a[i]=a[i].charAt(0).toUpperCase() + a[i].slice(1);
+   temp.push(a)
+   
+   }
+   return temp
+}
+
+
+console.log(b1(a))
+
+
+#######arrow##########
+
+var a=["KAVI","VARMAN","GUVI","STUDENT"]
+  
+  var b=(a)=>{
+  
+   
+   var temp=[]
+   for(var i=0;i<a.length;i++){
+       
+    a[i]=a[i].toLowerCase();
+   
+    a[i]=a[i].charAt(0).toUpperCase() + a[i].slice(1);
+   temp.push(a)
+   
+   }
+   return temp
+}
+
+
+console.log(b1(a))

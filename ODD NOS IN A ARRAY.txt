@@ -1,0 +1,98 @@
+
+***********IFFE****************
+
+var a=[1,2,3,45,676,89,90];
+var temp=[]
+(function task(a){
+    for(var i=0;i<a.length;i++)
+    {
+        if(a[i]%2==0){
+            
+        
+        odds=temp.push(a[i]);
+       
+}
+
+ 
+    }
+console.log(odds);
+})(a) 
+
+*****************************************************************************************************************
+
+*********ARROW****************
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+var a=[1,2,3,45,676,89,90];
+var temp=[]
+var task=(a)=>{
+    for(var i=0;i<a.length;i++)
+    {
+        if(a[i]%2==0){
+            
+        
+        odds=temp.push(a[i]);
+       
+}
+
+ 
+    }
+return odds;
+} 
+console.log(task(a))
+  //end-here
+});
+
+**********************************************************************************************************************
+
+
+********ANONONYMS***********
+
+
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+  var a=[12,34,67,89,65,54,56,67];
+  
+  var temp=[];
+
+var b=function(a){
+    
+ for(i=0;i<a.length;i++)
+ {
+      if(a[i]%2==0){
+          temp.push(a[i])
+      }
+  }
+  return temp
+}
+ console.log(b(a))
+
+  //end-here
+});
